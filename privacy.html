@@ -10,7 +10,7 @@
 <body>
 <header><div class="wrap">
   <a class="brand" href="./"><svg width="34" height="34" viewBox="0 0 100 100" aria-hidden="true"><defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7c5cff"/><stop offset="1" stop-color="#ff4fa3"/></linearGradient></defs><rect width="100" height="100" rx="22" fill="url(#g)"/><rect x="14" y="22" width="72" height="56" rx="7" fill="#0b0f14"/><path d="M42 37v26l21-13z" fill="#fff"/><circle cx="74" cy="32" r="5" fill="#ff3b30"/></svg>ClipBot</a>
-  <nav><a href="./">Home</a><a href="privacy.html" aria-current="page">Privacy</a><a href="data-deletion.html">Data deletion</a></nav>
+  <nav><a href="./">Home</a><a href="privacy.html" aria-current="page">Privacy</a><a href="terms.html">Terms</a><a href="data-deletion.html">Data deletion</a></nav>
 </div></header>
 <main class="wrap">
   <h1>Privacy Policy</h1>
@@ -20,9 +20,20 @@
   <h2>What ClipBot does</h2>
   <p>ClipBot watches public Twitch streams we choose, measures how busy each chat is, and saves short highlight clips when chat activity spikes. It adds captions and posts selected clips to The Clip Tease's own YouTube, Instagram, Facebook Page and TikTok accounts through each platform's official API.</p>
 
-  <h2>Information ClipBot handles</h2>
-  <h3>Our own accounts</h3>
-  <p>When we connect our YouTube, Instagram, Facebook Page, TikTok or Twitch account, the platform gives ClipBot an access token. ClipBot uses it only to:</p>
+  <h2>YouTube API Services</h2>
+  <p>ClipBot uses YouTube API Services to upload our clips to our YouTube channel. By using ClipBot, you agree to be bound by the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. Google's handling of information is described in the <a href="http://www.google.com/policies/privacy">Google Privacy Policy</a>.</p>
+  <p>Through the YouTube Data API, ClipBot accesses and stores:</p>
+  <ul>
+    <li>the sign-in tokens Google issues when we connect our channel;</li>
+    <li>our channel's ID, name, uploads playlist and “made for kids” setting;</li>
+    <li>the IDs and tags of our recent uploads, so the same clip is never uploaded twice;</li>
+    <li>the ID, link and processing status of each video ClipBot uploads.</li>
+  </ul>
+  <p>This information is used only to upload and track our own videos. It's stored only on our computer and isn't shared with anyone.</p>
+  <p><b>Revoking access.</b> In ClipBot, Accounts → YouTube → Disconnect revokes ClipBot's access at Google and deletes the stored YouTube data. In addition to that, you can revoke ClipBot's access at any time on the Google security settings page at <a href="https://security.google.com/settings/security/permissions">https://security.google.com/settings/security/permissions</a>. ClipBot checks its sign-in at least every 6 hours. When Google reports that access was revoked or has expired, ClipBot deletes the YouTube data it stored under that sign-in, always within 7 days.</p>
+
+  <h2>Our other accounts</h2>
+  <p>When we connect our Instagram, Facebook Page, TikTok or Twitch account, the platform gives ClipBot an access token. ClipBot uses it only to:</p>
   <ul>
     <li>read basic details of our account: its ID, name or username, the linked Facebook Page and Instagram account, follower and post counts, and which permissions we granted;</li>
     <li>upload and publish our clips, and check their processing status and posting limits;</li>
@@ -30,21 +41,19 @@
   </ul>
   <p>Tokens are stored only on our computer, in a file that only our user account can read. ClipBot doesn't read messages, comments or contacts, and it never accesses anyone else's account.</p>
 
-  <h3>Public Twitch streams and chat</h3>
+  <h2>Public Twitch streams and chat</h2>
   <p>ClipBot reads public stream details (whether a channel is live, its title and game) and records the public video, keeping only a rolling buffer of about 15 minutes that is continuously overwritten. Only highlight clips are saved.</p>
   <p>It reads public chat through Twitch's official chat service, with read-only access, and never sends messages. For each chat message it stores the time, the text, and a salted one-way hash in place of the viewer's account ID. Usernames are not stored. Chat logs are deleted automatically after 14 days.</p>
 
-  <h3>Highlight clips</h3>
+  <h2>Highlight clips</h2>
   <p>Saved clips, their captions (transcribed on our computer, not by an online service), titles and descriptions stay on our computer until we delete them. Clips we post are public on our accounts and credit the streamer with a link to their channel.</p>
 
-  <h3>Visitors to this website</h3>
+  <h2>Sharing, advertising and cookies</h2>
+  <p>We don't sell, rent or share personal information, and we don't use it for advertising. ClipBot sends information only to the platform it came from or to the platform a clip is posted to, over encrypted connections. ClipBot shows no ads and doesn't let third parties serve content.</p>
+  <p>ClipBot keeps the information described here in files on the computer it runs on. It doesn't place or read cookies or similar technologies, and it doesn't let third parties collect information from anyone's device.</p>
+
+  <h2>Visitors to this website</h2>
   <p>This website is a static site hosted on GitHub Pages. It uses no cookies, analytics or trackers. GitHub may log technical information such as IP addresses to run its service; see the <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub General Privacy Statement</a>.</p>
-
-  <h2>Sharing</h2>
-  <p>We don't sell, rent or share personal information, and we don't use it for advertising. ClipBot sends information only to the platform it came from or to the platform a clip is posted to, over encrypted connections.</p>
-
-  <h2>Google and YouTube</h2>
-  <p>ClipBot uses YouTube API Services; see the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. ClipBot's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. Access can be revoked at any time on the <a href="https://myaccount.google.com/permissions">Google Account permissions page</a>.</p>
 
   <h2>Meta and TikTok</h2>
   <p>ClipBot uses the Meta Graph API (Facebook and Instagram) and the TikTok Content Posting API only as described above. Access can be removed at any time in Facebook's “Apps and websites” settings, Instagram's “Website permissions” settings, or TikTok's app permission settings.</p>
@@ -54,7 +63,7 @@
     <li>Stream video buffer: continuously overwritten, about 15 minutes.</li>
     <li>Chat logs: deleted automatically after 14 days.</li>
     <li>Clips and captions: kept until we delete them.</li>
-    <li>Access tokens: kept until we disconnect the account in ClipBot, which deletes them.</li>
+    <li>Access tokens and YouTube data: kept until we disconnect the account in ClipBot or access is revoked, then deleted (YouTube data within 7 days of revocation).</li>
   </ul>
   <p>To ask us to delete information about you, follow the <a href="data-deletion.html">Data Deletion Instructions</a>.</p>
 
@@ -65,7 +74,7 @@
   <p>If this policy changes, we'll update this page and the date at the top.</p>
 
   <h2>Contact</h2>
-  <p>Questions or requests: <a href="mailto:ytdellmon@gmail.com">ytdellmon@gmail.com</a></p>
+  <p>Questions or complaints about ClipBot's privacy practices: <a href="mailto:ytdellmon@gmail.com">ytdellmon@gmail.com</a></p>
 </main>
 <footer><div class="wrap">© 2026 The Clip Tease · <a href="mailto:ytdellmon@gmail.com">ytdellmon@gmail.com</a></div></footer>
 </body>
